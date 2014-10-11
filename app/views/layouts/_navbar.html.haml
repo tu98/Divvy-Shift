@@ -1,0 +1,24 @@
+%nav.navbar.navbar-inverse.navbar-fixed-top{:role => "navigation"}
+  .container-fluid
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+        /Should figure out how to put in a root_path.
+      %a.navbar-brand{:href => "/"} Cloud Shifter
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      
+      
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          = link_to "About", about_path
+        %li
+          = link_to "Contact", contact_path
+        %li
+          = link_to "Sign up", new_user_registration_path
+    / /.navbar-collapse
+  / /.container-fluid
