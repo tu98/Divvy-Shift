@@ -10,6 +10,12 @@ gem 'devise'
 
 gem 'bootstrap-sass'
 
+gem 'haml'
+
+gem 'haml-rails'
+
+gem 'erb2haml'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
