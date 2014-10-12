@@ -1,6 +1,4 @@
 - if user_signed_in?
-
-
   %li.dropdown
     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
       = current_user.email
@@ -12,8 +10,6 @@
       %li
         = link_to 'User settings', root_path
 
-
-
 - else
   %li
-    = link_to('Login', new_user_session_path)
+    = link_to 'Login', new_user_session_path
