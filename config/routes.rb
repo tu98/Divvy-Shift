@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  authenticated :user do
+    root :to => "shifter#index", :as => "authenticated_root"
+  end
+
+
   get 'registrations/end'
 
   get 'shifter/index'
